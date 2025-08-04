@@ -65,7 +65,15 @@ Zapio/
 
 ### Prerequisites
 - Java 11 or higher (JRE or JDK)
-- No additional setup required - the .env file with API key is already included
+- OpenRouter API key (get one from https://openrouter.ai/)
+
+### Environment Setup
+1. Create a `.env` file in the root directory
+2. Add your OpenRouter API key to the `.env` file:
+   ```
+   OPENROUTER_API_KEY=your_api_key_here
+   ```
+3. The application uses the `google/gemini-2.0-flash-exp:free` model through OpenRouter
 
 ### Option 1: Run the Pre-built JAR (Recommended)
 
@@ -366,4 +374,3 @@ Zapio follows a modular architecture with three distinct layers:
 ## Future Enhancements (v2.0)
 
 - **Handwritten Index Card Generation**: Currently disabled in SelectionScreen.java (line 73), will be implemented in v2.0
-- All other suggestions from Dr. Sowell are currently in the works too.
